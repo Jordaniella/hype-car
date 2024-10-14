@@ -1,0 +1,44 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 888;
+}
+.nav__logo {
+  width: 100%;
+  max-width: 400px;
+  gap: 15px;
+  .logo {
+    width: 20px;
+    height: 20px;
+    transform: translate(-5px, -4px);
+    &:before,
+    &:after {
+      background: var(--primary-color);
+    }
+  }
+  span {
+    text-transform: uppercase;
+    font-family: "poppins-bold";
+    letter-spacing: 1.5px;
+  }
+}
+.nav__menus {
+  min-width: 400px;
+  width: calc(100% - 400px);
+  padding-left: 30px;
+  ul {
+    gap: 50px;
+    width: 70%;
+  }
+  .mini-btn {
+    background: var(--text-black);
+    border-radius: 50%;
+    font-size: 2rem;
+    font-family: "poppins";
+    width: 50px;
+    height: 50px;
+  }
+}
